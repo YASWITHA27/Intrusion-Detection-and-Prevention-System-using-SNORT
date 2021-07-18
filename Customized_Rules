@@ -1,0 +1,5 @@
+alert icmp $EXTERNAL_NET any -> $HOME_NET any  (msg:"intrusion alret message Yaswitha";  sid:5889; rev:1;)
+alert tcp any any -> $HOME_NET 21 (msg:"FTP Attempted"; sid:60001; rev:1;)
+alert tcp any any -> $HOME_NET 22 (msg:"SSH Attempted"; sid:60002; rev:1;)
+alert tcp $HOME_NET any -> $EXTERNAL_NET 80 (msg:" terrorism content found” ;  content: “terrorism” ; nocase; sid:60002; rev:1;)
+alert tcp $HOME_NET any -> $EXTERNAL_NET 80 (msg:" Surfing for online gaming” ;  content: “online gaming” ; nocase; sid:60002; rev:1;)
