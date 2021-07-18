@@ -1,0 +1,2 @@
+# Intrusion-Detection-and-Prevention-System-using-SNORT
+I have developed an Intrusion Detection and Prevention System with the help of SNORT installed in victim machine by writing the customized rules for detecting and preventing the live intrusions that are being attacked from Kali Linux on the victim machine (Ubuntu). Here the intrusions are attacked by kali Linux ( Attacker Machine ) on Ubuntu 20.04 ( Victim Machine)
