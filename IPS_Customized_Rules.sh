@@ -1,0 +1,6 @@
+alert icmp $EXTERNAL_NET any -> $HOME_NET any (msg:"Intrusion message anutarunyash"; sid:5889; rev:1;)
+alert icmp $EXTERNAL_NET any -> $HOME_NET any (msg:"Intrusion Attempt Prevention"; sid:5890; rev:1;)  
+alert tcp any any -> $HOME_NET 21 (msg:"FTP Failed Login"; sid:1000001; rev:1;)
+alert tcp any any -> $HOME_NET 21 (msg:"FTP Connection Attempted"; sid:1000002; rev:1;)  
+alert tcp any any -> $HOME_NET 21 (msg:"SSH Failed Login"; sid:1000003; rev:1;)  
+alert tcp any any -> $HOME_NET 21 (msg:"SSH Connection Attempted"; sid:1000004; rev:1;)  
