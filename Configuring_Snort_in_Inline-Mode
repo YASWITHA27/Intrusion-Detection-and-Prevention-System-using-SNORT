@@ -1,0 +1,6 @@
+Configuration :( Snort in inline mode)
+Step 1: Snort.conf
+Step 2: Make afpacket DAQ available. 
+Step 3: Run snort   daq-list and check the output for the DAQ libraries that are installed:
+Step 4: Here you can see that afpacket is available.
+Step 5: Next we add two lines to our snort.conf to enable afpacket in inline mode. Add these two lines to your snort.conf (around line number 168 is probably the correct place for it) 
